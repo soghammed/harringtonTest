@@ -22,14 +22,15 @@
 				isset($_POST['name']) && $_POST['name'] != ''
 				&& isset($_POST['email']) && $_POST['email'] != ''
 				&& isset($_POST['password']) && $_POST['password'] != ''
+				&& isset($_POST['validate_password']) && $_POST['validate_password'] != ''
 			){
 				$this->isFormValid = 1;
 			}
 		}
 
 		function persistData(){
-			$sql = "INSERT INTO test (name, email, password) VALUES 
-			('{$_POST['name']}', '{$_POST['email']}', '{$_POST['password']}')"; 
+			$sql = "INSERT INTO test (name, email, password, validate_password) VALUES 
+			('{$_POST['name']}', '{$_POST['email']}', '{$_POST['password']}', '{$_POST['validate_password']}')"; 
 			try{
 				$this->db->exec($sql);
 				echo "Data saved!";
