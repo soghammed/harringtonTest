@@ -1,0 +1,57 @@
+body{
+	min-width:550px;
+}
+.menu{
+	background-color:pink;
+	padding:10px;
+}
+.menu ul{
+	text-align:center;
+}
+
+.menu ul li{
+	list-style-type:none;
+	display:inline-block;
+	padding:5px 20px;
+}
+.menu ul li a{
+	color:black;
+	text-decoration:none;
+}
+section#footer{
+	margin:20px;
+	display:none;
+}
+section#carousel{
+	margin:20px auto;
+	width:50%;
+	display:none;
+}
+form{
+	padding:10px;
+}
+.carousel-container{
+	margin:20px 0 40px;
+}
+.carousel-custom-data{
+	position:absolute;
+	z-index: 1;
+	text-align: center;
+	margin:auto;
+	left:20px;
+	right:20px;
+	text-shadow: 0px 0px 5px #eee;
+}
+.carousel-title{
+	bottom:40px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	//min-width:250px;
+	font-size:1.4em;
+}
+
+.carousel-location{
+	top:20px;
+	font-size:1.6em;
+}
