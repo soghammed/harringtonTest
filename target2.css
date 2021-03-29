@@ -1,0 +1,15 @@
+body{
+	min-width:550px;
+}
+.menu{
+	background-color:pink;
+	padding:20px;
+}
+#content{
+	margin:auto;
+	text-align: center;
+}
+#footer{
+	background-color:pink;
+	padding:20px;
+}
